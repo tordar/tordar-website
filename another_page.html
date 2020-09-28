@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>This is another page</title>
-</head>
-<body style="background-color: grey">
+    <head>
+        <meta charset="UTF-8">
+        <title>This is another page</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+        <main>
+            <body>
+            <h1>This is another page on the website, with a grey background this time</h1>
+            <h3>Here I will demonstrate a few different forms with HTML</h3>
+            <a href="index.html">This is the home page</a>
+            <hr>
+            <a href="second_page.html">This is the second page</a>
+            <hr>
+            <a href="directory/starry.jpg">This is where van gogh is hiding</a>
 
-        <p><h1>This is another page on the website, with a grey background this time</h1></p>
-        <p><h3>Here I will demonstrate a few different forms with HTML</h3></p>
-        <a href="index.html">This is the home page</a>
-        <hr>
-        <a href="second_page.html">This is the second page</a>
-        <hr>
-        <a href="directory/starry.jpg">This is where van gogh is hiding</a>
-
-        <p>Now here's some more examples of different inputs available</p>
-<!-- Not sure what action and method means here, I am pretty sure it is
-information meant to be sent to the server, but not sure about php file
-and different methods -->
-        <form action="input.php" method="get"><fieldset><legend>Here's tons of different forms grouped together</legend>
-            <p>Username: <input type="text" placeholder="Enter username"/></p>
-            <p>Password: <input type="password" placeholder="Enter password"></p>
-            <p>Here's another example of a textbox: </p>
+            <p>Now here's some more examples of different inputs available</p>
+            <!-- Not sure what action and method means here, I am pretty sure it is
+            information meant to be sent to the server, but not sure about php file
+            and different methods -->
+            <form action="input.php" method="get"><fieldset><legend>Here's tons of different forms grouped together</legend>
+                <p>Username: <input type="text" placeholder="Enter username"/></p>
+                <p>Password: <input type="password" placeholder="Enter password"></p>
+                <p>Here's another example of a textbox: </p>
                 <textarea rows="5" cols="50" name="This one is even adjustable, how cool right?!" placeholder="Put in some text here"></textarea>
-            <p>Here you can select your favorite food:
-                <br />
-                <input type="checkbox" name="Food" value="Burritos"> Burritos
-                <input type="checkbox" name="Food" value="Pizza"> Pizza
-                <input type="checkbox" name="Food" value="Burgers"> Burgers </p>
-            <p> Here you can select which car you drive:
-                <select size="1" name="cars">
-                <option value="Saab">Saab</option>
-                <option value="Ford">Ford</option>
-                <option value="Toyota">Toyota</option>
-                <option value="Kia">Kia</option>
-            </select></p>
-            <p>Enter your e-mail to subscribe to our daily hentai newsletter</p>
+                <p>Here you can select your favorite food:
+                    <br />
+                    <input type="checkbox" name="Food" value="Burritos"> Burritos
+                    <input type="checkbox" name="Food" value="Pizza"> Pizza
+                    <input type="checkbox" name="Food" value="Burgers"> Burgers </p>
+                <p> Here you can select which car you drive:
+                    <select size="1" name="cars">
+                        <option value="Saab">Saab</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Kia">Kia</option>
+                    </select></p>
+                <p>Enter your e-mail to subscribe to our daily hentai newsletter</p>
                 <input type="text" name="email"/>
                 <input type="submit" name="subscribe"
-                    value="Subscribe" />
-        </fieldset>
-        </form>
+                       value="Subscribe" />
+            </fieldset>
+            </form>
 
-        <p>Here's more examples of cool stuff</p>
-        <form>
-            <div><input type="date"></div>
-            <div><input type="file"></div>
-            <div> <input type="search" placeholder="Search" ></div>
-        </form>
-
-</body>
+            <p>Here's more examples of cool stuff</p>
+            <form>
+                <div><input type="date"></div>
+                <div><input type="file"></div>
+                <div> <input type="search" placeholder="Search" ></div>
+            </form>
+            </body>
+            </main>
 </html>
 
