@@ -6,6 +6,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     </head>
         <main>
             <body>
@@ -30,19 +36,16 @@
 				</form>
 			  </div>
 			</nav>
+
             <h1>This is another page on the website</h1>
             <h3>Here I will demonstrate a few different forms with HTML</h3>
-            <a href="index.html">This is the home page</a>
-            <hr>
-            <a href="second_page.html">This is the second page</a>
-            <hr>
             <a href="directory/starry.jpg">This is where van gogh is hiding</a>
 
-            <p>Now here's some more examples of different inputs available</p>
+            <p id="anotherp1">Now here's some more examples of different inputs available</p>
             <!-- Not sure what action and method means here, I am pretty sure it is
             information meant to be sent to the server, but not sure about php file
             and different methods -->
-            <form action="input.php" method="get"><fieldset><legend>Here's tons of different forms grouped together</legend>
+            <div id="anotherp2"><form action="input.php" method="get"><fieldset><legend>Here's tons of different forms grouped together</legend>
                 <p>Username: <input type="text" placeholder="Enter username"/></p>
                 <p>Password: <input type="password" placeholder="Enter password"></p>
                 <p>Here's another example of a textbox: </p>
@@ -64,14 +67,10 @@
                 <input type="submit" name="subscribe"
                        value="Subscribe" />
             </fieldset>
-            </form>
 
-            <p>Here's more examples of cool stuff</p>
-            <form>
-                <div><input type="date"></div>
-                <div><input type="file"></div>
-                <div> <input type="search" placeholder="Search" ></div>
-            </form>
+           </form>
+            </div>
+
             </body>
             </main>
 </html>
