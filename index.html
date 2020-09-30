@@ -16,22 +16,42 @@
 		<title>Tordar's website</title>
 	</header>
 		<main>
-			<h2 id="web-title">This is Tordar's amazing website</h2>
+			<nav class="navbar navbar-expand-lg navbar-darm bg-dark">
+			  <a class="navbar-brand" href="#">Tordar's website</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				  </li>
+					<div><a class="nav-link" href="second_page.html">Tables</a></div>
+					  <div><a class="nav-link" href="another_page.html">Forms</a></div>
+					<div><a class="nav-link" href="yet_another.html">Video/Flexbox</a></div>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="This doesn't work yet" aria-label="Search">
+				  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			  </div>
+			</nav>
 			<br/>
 			<br/>
-			<div class="" style="background-color: lightblue; padding: 30px;">
-			<div class="row-md-3 container">Here we have a lot of different text to give an example of how this website can look with Bootstrap</div>
-			<div class="row-md-3 container">This is also another paragraph - meant to further exemplify the usefulness of Bootstrap</div>
-			<div class="row-md-3 container">By using Bootstrap we can place several elements next to each other, and when the website shrinks</div>
-			<div class="row-md-3 container">The elements will be placed underneath each other to make sure the website is responsive and looks good on all platforms</div>
+			<div class="row" style="background-color: lightblue; padding: 30px;">
+			<div class="col-md-3 container">Here we have a lot of different text to give an example of how this website can look with Bootstrap </div>
+			<div class="col-md-3 container">This is also another paragraph - meant to further exemplify the usefulness of Bootstrap</div>
+			<div class="col-md-3 container">By using Bootstrap we can place several elements next to each other, and when the website shrinks</div>
+			<div class="col-md-3 container">The elements will be placed underneath each other to make sure the website is responsive and looks good on all platforms</div>
 				</div>
 			<p class="box-animation1">Touch me for extraordinary webdesign</p>
-			<ul>
-				<li><a href="second_page.html"><h5>Examples of tables etc.</h5></a></li>
-				<li><a href="another_page.html"><h5>Examples of different forms</h5></a></li>
-				<li><a href="yet_another.html"><h5>Examples of embedded video and flexbox</h5></a></li>
-			</ul>
+				<a href="second_page.html"><button type="button" class="btn btn-primary">Examples of tables etc.</button></a>
+				<a href="another_page.html"><button type="button" class="btn btn-primary">Examples of different forms</button></a>
+				<a href="yet_another.html"><button type="button" class="btn btn-primary">Examples of embedded video and flexbox</button></a>
 	<!-- At this point we are just writing a comment, nothing to see here -->
+			<br/>
+			<br/>
 			<ol type="1">
 				<li><a href="https://www.apple.com/" target="_blank">Apples</a></li>
 				<li><a href="https://www.orange.com/en" target="_blank">Oranges</a></li>
