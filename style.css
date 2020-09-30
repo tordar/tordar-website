@@ -1,6 +1,59 @@
 body {background-color: lightblue; font-size: 1em; font-family: 'Tahoma'}
-main {background-color: lightblue; border: 5px solid black; max-width: 700px}
 ul {background-color: ; padding: 30px}
-h1 {text-shadow: 5px 5px 5px blue}
+h1:hover {text-shadow: 5px 5px 5px blue}
 h2 {background-color: darksalmon; position:fixed; right: 0px;}
 img {border-radius: 30px; box-shadow: 5px 5px 5px red}
+#example {font-size: 2em; color: navy; text-shadow: 5px 5px:}
+
+.border-example {border: 3px dashed red;}
+.blue-text {color: lightblue}
+
+.container {
+  background-color: coral;
+  border: 10px solid black;
+}
+.box{
+background-color: dodgerblue;
+padding: 5px 10px 10px 5px;
+margin: 10px 20px 20px 10px;
+width: 120px;
+height: 120px;
+box-shadow: 2px 2px 2px black;
+}
+
+.box2{
+background-color: lightblue;
+padding: 5px 10px 10px 5px;
+margin: 10px 20px 20px 10px;
+width: 120px;
+height: 80px;
+box-shadow: 2px 2px 2px black;
+}
+
+.flex-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     align-items: top;
+     align-content: center;
+}
+
+@keyframes change-color{
+    0% {background-color: dodgerblue; top: 10px;}
+    50% {background-color: darksalmon; top: 30px;}
+    100% {background-color: green; top: 50px;}
+}
+
+.box-animation:hover{
+    animation: change-color 2s infinite;
+}
+
+@keyframes change-color1{
+    from {background-color: black;}
+    to {background-color: yellow;}
+}
+
+.box-animation1:hover{
+    animation: change-color1 2s infinite;
+}
