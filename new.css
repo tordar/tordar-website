@@ -35,7 +35,7 @@ max-width: 450px
 }
 
 #nav-ul {
-width: 650px;
+max-width: 650px;
 padding: 15px;
 margin: 0px auto 0px auto;
 border-top: 2px solid black;
@@ -47,6 +47,7 @@ text-align: center;
 display: inline;
 margin: 0px 3px;
 padding: 6px 18px 5px 18px;
+text-decoration: none;
 }
 
 p {
@@ -64,8 +65,8 @@ max-width: 600px;
 a {
 color: black;
 text-transformation: uppercase;
-
 }
+
 a:hover {
 color: darkcyan
 }
@@ -80,3 +81,40 @@ center {
   margin-right: auto;
   align: center;
 }
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #nav-ul{
+  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid black;
+border-bottom: 2px solid black;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #page {
+max-width: 640px;
+min-width: 320px;
+margin: 10px auto 10px auto;
+padding: 20px;
+border: 2px solid black;
+}
+
+#logo {
+max-width: 300px;
+margin: 10px auto 10px auto;
+flex-wrap: wrap;
+    display: flex;
+align: center;
+}
+#journal {
+margin: auto;
+border: solid 2px;
+width: 300px;
+align: center;
+}
+  }
