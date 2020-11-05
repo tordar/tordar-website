@@ -279,3 +279,7 @@
 				});
 
 })(jQuery);
+
+
+
+console.log(object);
