@@ -1,3 +1,5 @@
+:root {--transition: all 0.3s linear;}
+
 body {
 background-color: rgb(255, 253, 208)
 }
@@ -34,17 +36,23 @@ border: 1px solid black;
 max-width: 450px
 }
 
-#nav-ul {
+.links {
 max-width: 650px;
 padding: 15px;
 margin: 0px auto 0px auto;
-border-top: 2px solid black;
-border-bottom: 2px solid black;
 text-align: center;
+overflow: hidden;
+align-items: center;
+display: flex;
+    flex-direction: row;
 }
 
+
 #nav-li {
-display: inline;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
 margin: 0px 3px;
 padding: 6px 18px 5px 18px;
 text-decoration: none;
@@ -64,7 +72,8 @@ max-width: 600px;
 
 a {
 color: black;
-text-transformation: uppercase;
+text-transform: capitalize;
+text-decoration: none;
 }
 
 a:hover {
@@ -79,19 +88,31 @@ center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  align: center;
+  text-align: center;
 }
 
-@media only screen and (max-width: 815px) {
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+
+
+@media only screen and (max-width: 800px) {
   /* For mobile phones: */
-  #nav-ul{
+  .links{
   flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-top: 2px solid black;
-border-bottom: 2px solid black;
     width: 100%;
     z-index: 1;
   }
@@ -117,4 +138,24 @@ border: solid 2px;
 width: 300px;
 align: center;
 }
+
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    /* Important to add */
+    .links {
+      height: auto;
+      display: flex;
+    }
   }

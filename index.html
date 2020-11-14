@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180110325-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-180110325-1');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180110325-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-180110325-1');
+    </script>
 
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="new.css"/>
+    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
+
 <body>
     <div id="page">
-        <ul id="nav-ul">
+        <ul class="links">
             <li id="nav-li"><a href="index.html" class="on">Home</a></li>
             <li id="nav-li"><a href="photography.html">Photography</a></li>
             <li id="nav-li"><a href="cv.html">Curriculum Vitae</a></li>
             <li id="nav-li"><a href="programming.html">Programming</a></li>
             <li id="nav-li"><a href="homepage.html">Earlier version</a></li>
         </ul>
+
         <div id="logo">
-            <img id="logo" src="directory/portrait.jpg" alt="portrait"/>
+            <img id="logo" src="directory/portrait.jpg" alt="portrait" />
         </div>
-    <hr class="new1"/>
-        <p>This is my webpage, created to showcase my photography, publish my resume, and document my programming progress</p>
+        <hr class="new1" />
+        <p>This is my webpage, created to showcase my photography, publish my resume, and document my programming
+            progress</p>
     </div>
-    <footer><p>Powered by coffee and created by </br><a href="mailto:tordar.tommervik@gmail.com">Tordar Tømmervik </a>2020</p></footer>
+    <footer>
+        <p>Powered by coffee and created by </br><a href="mailto:tordar.tommervik@gmail.com">Tordar Tømmervik </a>2020
+        </p>
+    </footer>
+    </div>
 </body>
+<script src="navScript.js"></script>
+
 </html>
