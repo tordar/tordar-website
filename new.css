@@ -1,7 +1,8 @@
 :root {--transition: all 0.3s linear;}
 
 body {
-background-color: rgb(255, 253, 208)
+  background-image: linear-gradient(to right, rgb(241, 171, 171), rgb(159, 190, 216));
+  height:100vh;
 }
 
 #page {
@@ -36,6 +37,7 @@ border: 1px solid black;
 max-width: 450px
 }
 
+
 .links {
 max-width: 650px;
 padding: 15px;
@@ -55,13 +57,20 @@ justify-content: center;
 align-items: center;
 margin: 0px 3px;
 padding: 6px 18px 5px 18px;
-text-decoration: none;
 }
 
 p {
 text-align: center;
 margin: 20px auto 20px auto;
 max-width: 400px;
+}
+
+#exp{
+  margin-top: 5%;
+  font-family: 'Raleway',sans-serif; 
+  font-size: 20px; 
+  font-weight: normal; 
+  line-height: 30px;
 }
 
 .journal {
@@ -73,7 +82,6 @@ max-width: 600px;
 a {
 color: black;
 text-transform: capitalize;
-text-decoration: none;
 }
 
 a:hover {
@@ -130,13 +138,12 @@ max-width: 300px;
 margin: 10px auto 10px auto;
 flex-wrap: wrap;
     display: flex;
-align: center;
+
 }
 #journal {
 margin: auto;
 border: solid 2px;
 width: 300px;
-align: center;
 }
 
     .nav-center {
